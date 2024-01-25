@@ -1,0 +1,27 @@
+---
+title: "Resources"
+image: images/bdsc-logo-hex.png
+about:
+  id: hero-heading
+  template: solana
+---
+
+::: column-page
+
+## Helpful Things
+
+\[Add helpful things here\]
+
+------------------------------------------------------------------------
+
+## Contact Us
+
+### Github page
+
+Biodiversity Data Science Corp.
+
+### Contact Information
+
+📧 **Email:** hello\@email.com
+
+::: column-page

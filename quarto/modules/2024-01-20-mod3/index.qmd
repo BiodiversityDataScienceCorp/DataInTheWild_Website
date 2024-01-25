@@ -1,0 +1,12 @@
+---
+title: "Test Post 3"
+description: "Georgia peaches."
+image: penguins_2.png
+title-block-banner: true
+title-block-banner-color: "#FFEBCD"
+draft: false
+---
+
+### MODULE 3
+
+You must have just read it.

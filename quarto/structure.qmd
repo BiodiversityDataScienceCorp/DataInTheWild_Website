@@ -1,0 +1,103 @@
+---
+title: "Course Structure"
+---
+
+\[Main description\]
+
+## MODULE 1
+
+\[Narrative\]
+
+### *Key Concepts*
+
+-   Concept 1
+
+-   Concept 2
+
+### *Order of Activities*
+
+| Week | Topic | Lesson | Discussion | Assignment |
+|------|-------|--------|------------|------------|
+| 1    |       |        |            |            |
+| 2    |       |        |            |            |
+| 3    |       |        |            |            |
+
+------------------------------------------------------------------------
+
+## MODULE 2
+
+\[Narrative\]
+
+### *Key Concepts*
+
+-   Concept 1
+
+-   Concept 2
+
+### *Order of Activities*
+
+| Week | Topic | Lesson | Discussion | Assignment |
+|------|-------|--------|------------|------------|
+| 1    |       |        |            |            |
+| 2    |       |        |            |            |
+| 3    |       |        |            |            |
+
+------------------------------------------------------------------------
+
+## MODULE 3
+
+\[Narrative\]
+
+### *Key Concepts*
+
+-   Concept 1
+
+-   Concept 2
+
+### *Order of Activities*
+
+| Week | Topic | Lesson | Discussion | Assignment |
+|------|-------|--------|------------|------------|
+| 1    |       |        |            |            |
+| 2    |       |        |            |            |
+| 3    |       |        |            |            |
+
+------------------------------------------------------------------------
+
+## MODULE 4
+
+\[Narrative\]
+
+### *Key Concepts*
+
+-   Concept 1
+
+-   Concept 2
+
+### *Order of Activities*
+
+| Week | Topic | Lesson | Discussion | Assignment |
+|------|-------|--------|------------|------------|
+| 1    |       |        |            |            |
+| 2    |       |        |            |            |
+| 3    |       |        |            |            |
+
+------------------------------------------------------------------------
+
+## MODULE 5
+
+\[Narrative\]
+
+### *Key Concepts*
+
+-   Concept 1
+
+-   Concept 2
+
+### *Order of Activities*
+
+| Week | Topic | Lesson | Discussion | Assignment |
+|------|-------|--------|------------|------------|
+| 1    |       |        |            |            |
+| 2    |       |        |            |            |
+| 3    |       |        |            |            |

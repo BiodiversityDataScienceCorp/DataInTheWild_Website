@@ -1,0 +1,11 @@
+---
+title: "Test Post 5"
+description: "What is the purpose of the spots on this butterfly?"
+title-block-banner: true
+title-block-banner-color: "#FFEBCD"
+draft: false
+---
+
+### MODULE 5
+
+Can serve as mimicry or as a target.

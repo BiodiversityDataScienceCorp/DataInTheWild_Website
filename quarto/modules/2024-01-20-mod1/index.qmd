@@ -1,0 +1,12 @@
+---
+title: "Test Post"
+description: "I need to figure out how to put the modules and lessons in here."
+image: expedition.jpg
+title-block-banner: true
+title-block-banner-color: "#FFEBCD"
+draft: false
+---
+
+### MODULE 1
+
+Hi hi

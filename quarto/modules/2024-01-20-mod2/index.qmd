@@ -1,0 +1,12 @@
+---
+title: "Test Post 2"
+description: "A chipmunk runs up to dead snake skin and rubs it all over its body."
+image: fish.jpg
+title-block-banner: true
+title-block-banner-color: "#FFEBCD"
+draft: false
+---
+
+### MODULE 2
+
+Hi hi again
