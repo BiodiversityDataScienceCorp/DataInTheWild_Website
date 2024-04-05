@@ -4,9 +4,8 @@ image: images/bdsc-logo-hex.png
 about:
   id: hero-heading
   template: solana
+sidebar: FALSE
 ---
-
-::: column-page
 
 ## Helpful Things
 
@@ -22,6 +21,4 @@ Biodiversity Data Science Corp.
 
 ### Contact Information
 
-📧 **Email:** hello\@email.com
-
-::: column-page
+**Email:** hello\@email.com
