@@ -24,17 +24,41 @@ website:
           contents: 
             - course_materials.qmd
             - structure.qmd
-        - section: "Modules"
+            
+        - section: "Module 1"
           contents: 
-            - module1.qmd
-            - module2.qmd
-            - module3.qmd
-            - module4.qmd
+            - modules/module_1/module1_1.qmd
+            - modules/module_1/module1_2.qmd
+            - modules/module_1/module1_3.qmd
+            
+        - section: "Module 2"
+          contents: 
+            - modules/module_2/module2_1.qmd
+            - modules/module_2/module2_2.qmd
+            - modules/module_2/module2_3.qmd
+            - modules/module_2/module2_4.qmd
+            - modules/module_2/module2_5.qmd
+            - modules/module_2/module2_6.qmd
+            - modules/module_2/module2_7.qmd
+            
+        - section: "Module 3"
+          contents: 
+            - modules/module_3/module3_1.qmd
+            - modules/module_3/module3_2.qmd
+            - modules/module_3/module3_3.qmd
+            - modules/module_3/module3_4.qmd
+            - modules/module_3/module3_5.qmd
+            
+        - section: "Module 4"
+          contents: 
+            - modules/module_4/module4_1.qmd
+            - modules/module_4/module4_2.qmd
+            - modules/module_4/module4_3.qmd
         
   page-footer: 
     background: $dark-blue
     foreground: $blanched-almond
-    left: "Copyright 2024, University of Arizona | Last modified: 5 April 2024"
+    left: "Copyright 2024, University of Arizona | Last modified: 7 June 2024"
     right: 
       - href: https://quarto.org/
         text: "Made with Quarto"
