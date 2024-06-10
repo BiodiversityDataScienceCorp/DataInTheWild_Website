@@ -1,0 +1,333 @@
+---
+title: "1.3: 2-Dimensional Data and the `tidyverse`"
+---
+
+## ⊳ Learning Outcomes
+
+-   Students will be able to load packages.
+-   Students will be able to use some functions of the tidyverse: select, filter, the pipe, mutate, summarize, and group by.
+-   Students will compare and contrast base R and tidyverse methodology for sub-setting data frames.
+-   Students will able to use tidyverse functions to summarize real-world data.
+
+## ⊳ Lecture / Code-along
+
+> ### The `tidyverse`: What is it?
+>
+> Different programming languages have different syntax (language structure). The `tidyverse` is a package (more accurately, a set of packages) offered in R that all have similar goals and a unified syntax designed to work particularly well with 2-dimensional data.
+>
+> Until now, all of the coding we have done is in the original R language, which is often called "base R." The syntax in the `tidyverse` is often pretty different from base R. Both are useful, and many people often combine them, which is why we start with base R.
+>
+> That said, we will be primarily using the `tidyverse` for the rest of the semester. With the exception of Module 1 Assignment 3, which is exclusively about `tidyverse`, I will never punish you for using base R in place of `tidyverse`, as long as you get the same answer!
+>
+> #### Wait, what is a package??
+>
+> Packages are one of the neatest things of working in an open-source environment like R! They contains bits of code (often in the form of functions) that can be reused, making them a core component of reproducible data science. Anyone can develop a package, and there are thousands of them doing all sorts of things.
+>
+> #### Explore the `tidyverse`
+>
+> If you want to learn more about the tidyverse, head over to [www.tidyverse.org](www.tidyverse.org) and browse the site. Below is a brief summary of *some* of the packages I think you might find the most useful.
+>
+> -   `tidyr`: creating data that is consistent in form/shape
+> -   `dplyr`: creating data that is clean, easily wrangled, and summarized
+> -   `ggplot2`: publication-worthy plots using The Grammar of Graphics
+> -   `tibble`: data frames but better!
+> -   `readr`: fast and friendly ways to read data into R
+> -   `stringr`: easy manipulation of strings (character data)
+> -   `lubridate`: easy manipulation of time and date values
+>
+> ### Practice with the `tidyverse`
+>
+> #### Download and install
+>
+> In most scenarios, you will need to download a package from the internet onto your computer before you can use it in RStudio. However, with RStudio Cloud, I've already done this step for you!
+>
+> For future reference, though:
+>
+> -   you usually only need to go through this process once until you update R
+> -   we use the function `install.packages()` to download the package
+
+```{r install_tidyverse, message = FALSE}
+# Download and install the tidyverse package(s)
+
+# To run the line of code below, remove the # in front of the line below and run this chunk:
+
+# install.packages("tidyverse")
+```
+
+> #### Load into R
+>
+> Any time we open R/RStudio and want to use functions from the `tidyverse`, we need to "load" the package. We use the `library()` function to do this.
+>
+> When you run this code, you'll see a message that says "Attaching packages" and "Conflicts." Don't panic!
+>
+> -   The first bit tells us that the core packages have been brought into our R session.
+> -   The "conflict" part is a little more complicated but we don't need to worry too much about it.
+>     -   If you're curious, though, it is telling us that there are some functions in the `tidyverse` that have the same names as functions that are automatically installed with R and that the `tidyverse` versions of those functions will be the ones that get used by default unless we specify otherwise.
+
+```{r load_tidyverse, message=FALSE, warning=FALSE}
+# Load the tidyverse (tell RStudio we want to use this package in this session)
+library(tidyverse)
+```
+
+> #### Climate Data
+>
+> To learn about the `tidyverse` syntax, we're going to use a real data set on climate change from Berkeley, CA, USA. It outlines temperatures in major cities across the world since 1750.
+
+```{r climate_data, message=FALSE, warning=FALSE}
+# Read in the data file
+
+# `read_csv() is part of the `tidyverse`
+# It gives us nice options when reading in data
+climate_df <- read_csv("data/global_temps.csv")
+
+# Let's take a look at the climate data
+climate_df
+
+```
+
+> The `tidyverse` converts 2D data into something called a tibble! For our intents and purposes, it is basically the same as a data frame (and I'll probably call it a data frame, in reality).
+>
+> Let's take a look at our tibble (A.K.A. data frame).
+
+```{r, message=FALSE, warning=FALSE}
+# Explore the data set
+
+# First 6 rows
+head(climate_df)
+
+# Last 6 rows
+str(climate_df)
+```
+
+> ### `select()`ing columns
+>
+> Let's use our first function, `select()`. Select allows us to pick out specific columns from our data. You can use names or their position in the data frame.
+>
+> First, let's remind ourselves how we would accomplish this in base R.
+
+```{r select_baseR, message=FALSE, warning=FALSE}
+# Column selection in base R
+# Option 1: climate_df$dt
+
+# Option 2:
+# Select multiple columns, in this case the first two
+climate_df[, 1:2]
+```
+
+> The `select()` function does the same thing but with more power (and, in my opinion, more easily). The first argument in the function is the data frame. Any following arguments are the columns we want to select.
+
+```{r select_tidy, message=FALSE, warning=FALSE}
+# First argument is the data frame, then the columns
+select(climate_df, dt)
+
+# Multiple columns:
+
+# City and Country
+select(climate_df, dt, City, Country)
+
+# All columns until Country
+select(climate_df, dt:Country)
+
+# All columns except City
+select(climate_df, -City)
+```
+
+> You might have noticed that we haven't put any column names in quotations, unlike what we did with selecting columns by name in base R. This is one quirk of the `tidyverse` to which you will need to pay special attention. We *usually* will not need to put column names in quotations.
+>
+> #### Let's practice!
+>
+> Write a line of code to select the following data from the `climate_df`: average temperature, latitude and longitude
+
+```{r, message=FALSE, warning=FALSE}
+# Select three select columns
+select(climate_df, AverageTemperature, Latitude, Longitude)
+```
+
+> It is important to remember that the computer interprets everything literally. We need to tell the function the **exact** names of the columns. R will interpret `latitude` and `Latitude` as different things; it doesn't know that they are probably the same!
+>
+> ### `filter()`ing rows
+>
+> `filter()` allows you filter rows by certain conditions. Recall that we did this a bit with base R.
+
+```{r filter_baseR, message=FALSE, warning=FALSE}
+# Base R
+# Select rows where the average temperature was greater than 25
+climate_df[climate_df$AverageTemperature > 25, ]
+```
+
+> The code above is, in my opinion, a bit unwieldy. Filter feels more intuitive. We still need the double equal signs, though!
+
+```{r filter_tidy, message=FALSE, warning=FALSE}
+# Filter same content as above, but with `tidyverse`
+filter(climate_df, AverageTemperature > 25)
+
+# It is easy to write multiple conditions and to chain stuff together:
+
+# Only rows that meet both conditions; you could also use "&" instead of ","
+filter(climate_df, AverageTemperature > 25, Country == "United States")   
+
+# Rows that meet one or the other condition; the "|" symbol means "or"
+filter(climate_df, AverageTemperature > 25 | Country == "United States" ) 
+
+# Pulls rows in which the Country column has either "United States" OR "Mexico"
+filter(climate_df, Country == "United States" | Country == "Mexico")      
+
+# Worth noting here that we haven't saved any of this
+# To do that, we need to write to a new object
+us_df <- filter(climate_df, AverageTemperature > 25)
+```
+
+> ### Let's practice using `select()` and `filter()`
+>
+> Work with the climate data we've been using this class period. Construct a small set of code that does the following:
+>
+> 1.  Slims down the full data frame to one that contains the columns dt, AverageTemperature and City. Assign this to an object called `slim`.
+> 2.  Filters the data for Paris with an average temperature less than 22.
+> 3.  Name this new data frame "cold_paris"
+
+```{r, message=FALSE, warning=FALSE}
+# Not piped
+
+# (1)
+slim <- select(climate_df, dt, AverageTemperature, City)
+
+# (2)
+filtered <- filter(slim, City == "Paris", AverageTemperature < 22)
+
+# (3)
+cold_paris <- filtered
+```
+
+> ### The pipe `%>%`
+>
+> You can use the pipe operator to chain tidyverse functions together. You can think of the pipe as automatically sending the output from the first line into the next line as the input.
+>
+> This is helpful for a lot of reasons, including:
+>
+> 1.  removing the clutter of creating a lot of intermediate objects in your work space, which reduces the chance of errors caused by using the wrong input object
+> 2.  makes things more human-readable (in addition to computer-readable)
+>
+> The shortcut for typing a pipe is `Ctrl` + `Shift` + `M` (or `Cmd` + `Shift` + `M` on a Mac)
+
+```{r pipes, message=FALSE, warning=FALSE}
+# Open climate_df %>% 
+# Select City column
+# (Returns City column)
+climate_df %>% 
+  select(dt, City)
+
+# (1) Will store results in cold_paris
+# (2) Open climate_df
+cold_paris <- climate_df %>%
+  # (3) Select two columns
+  select(dt, AverageTemperature, City) %>%   
+  # (4) Filter to Paris, then filter data where where avg. temp < 22
+  filter(City == "Paris", AverageTemperature < 22)  
+```
+
+> #### Let's practice!
+>
+> In small groups, use pipes to create a new data frame called `warm_nigeria` that includes the following:
+>
+> -   the columns AverageTemperature, City, Country
+> -   only rows for the country Nigeria and temperatures that are greater than 30 degrees
+
+```{r nigeria30, message=FALSE, warning=FALSE}
+warm_nigeria <- climate_df %>% 
+  # Select columns
+  select(AverageTemperature, City, Country) %>% 
+  # Filter
+  filter(Country == "Nigeria", AverageTemperature > 30)
+```
+
+> ### Creating new variables with `mutate()`
+>
+> Sometimes our data doesn't have our data in exactly the format we want. For example, we might want our temperature data in Fahrenheit instead of Celsius.
+>
+> The `tidyverse` has a function called `mutate()` that lets us create a new column. Often, we want to apply a function to the entire column or perform some type of calculation, such as converting temp from F to C.
+>
+> To help us out, here is the equation for converting: `Fahrenheit = Celsius * (9/5) + 32`
+
+```{r mutate, message=FALSE, warning=FALSE}
+climate_df %>% 
+  # Select temperature column
+  select(dt, AverageTemperature) %>% 
+  # Create a new column for converted temperatures in Fahrenheit
+  mutate(AverageTemperature_F = AverageTemperature * (9/5) + 32)
+```
+
+> The first part of the argument in the mutate function (before the `=`) is the name of the new column we want to create (or, sometime, the name of a column we want to overwrite). After the `=` is what we want the new column to contain.
+>
+> ### Understanding data through `summarize()`
+>
+> Like we have talked about in previous classes, some of the best ways for us to understand our data is through what we call summary statistics such as the mean, standard deviation, minimums, maximums, etc.
+>
+> Fortunately, the `tidyverse` has a handy-dandy function to make this easy to do with data frames.
+>
+> The `summarize()` function creates a new dataframe with columns and values we give it. Similar to `mutate()`, what is on the left of the `=` is the name of the new column, and what is on the right of the `=` is the value(s) to put in the new column.
+
+```{r summarize, message=FALSE, warning=FALSE}
+climate_df %>% 
+  # Make new data frame with one column containing: 
+  summarise(mean_temp = mean(AverageTemperature),    # average temperature and
+            sd_temp = sd(AverageTemperature))        # the other the sd
+```
+
+> Wait a second! Those are some weird values!
+>
+> `NA` is used to represent missing data. So what is happening here? We know that there are numbers to calculate these values.
+>
+> It is important to note that if any of the values in the column that you are trying to summarize are missing (`NA`), you might get some wonky values, like you did above.
+>
+> Fortunately, `mean()` and `sd()` and some other functions have an argument to remove the missing values: `na.rm = TRUE`
+
+```{r summarize_na.rm, message=FALSE, warning=FALSE}
+# Same as above, but with NA values omitted from calculation
+climate_df %>% 
+  summarise(mean_temp = mean(AverageTemperature, na.rm = TRUE),
+            sd_temp = sd(AverageTemperature, na.rm = TRUE))
+```
+
+> Pay attention to where the `na.rm = TRUE` argument is placed. We are putting it inside the parentheses for the `mean()` and `sd()` function, not as an argument in the `summarize()` function.
+>
+> ### Split, Apply, Combine with `group_by()`
+>
+> One common way we analyze data is through something we call the "split, apply, combine" approach. This means that we:
+>
+> -   *split* data up into groups via some type of categorization
+> -   *apply* some type of analysis to each group independently and
+> -   *combine* the data back together
+>
+> The `group_by()` function lets us do this. It is most often used in combination with `mutate()` or `summarize()`.
+>
+> For example, we can use this method to calculate the mean temperatures of **each** country instead of the overall mean of the entire dataset. In order to do these, we create groups in the data based on the country.
+
+```{r group_by, message=FALSE, warning=FALSE}
+# Group data by country, then find mean and standard deviation for each
+climate_df %>% 
+  group_by(Country) %>% 
+  summarise(mean_temp = mean(AverageTemperature, na.rm = TRUE), 
+            sd_temp = sd(AverageTemperature, na.rm = TRUE))
+```
+
+> #### Let's practice!
+>
+> Practice using the combination of `group_by()` and `summarize()` to calculate the minimum (`min()`) and maximum (`max()`) average temperatures for each city. Save this data frame as `city_min_max`
+
+```{r group_by_city, message=FALSE, warning=FALSE}
+# Group data by city, then find minimum and maximum for each
+climate_df %>% 
+  group_by(City) %>% 
+  summarize(min_temp = min(AverageTemperature, na.rm = TRUE),
+            max_temp = max(AverageTemperature, na.rm = TRUE))
+```
+
+> Already accomplished this task? Try to figure out how you can keep the "Country" column in the final data frame. This is trickier than you might think!
+
+```{r group_by_city_country, message=FALSE, warning=FALSE}
+# Group data by country, then group by city, then find minimum and maximum for each
+climate_df %>% 
+  group_by(Country, City) %>% 
+  summarize(min_temp = min(AverageTemperature, na.rm = TRUE),
+            max_temp = max(AverageTemperature, na.rm = TRUE))
+```
