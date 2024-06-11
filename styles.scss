@@ -2,9 +2,11 @@
 
 // Fonts
 
+// Raleway
+// Righteous
 // Vollkorn
 
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
 // Colors
 $blanched-almond: #FFEBCD;
@@ -23,7 +25,7 @@ $slate-grey: #C6E2FF;
 $navbar-bg: $dark-blue; // navbar (bar at top of page)
 $navbar-fg: $blanched-almond; // navbar foreground (text, etc.)
 $navbar-hl: $slate-grey; // when you hover over navbar stuff
-$link-color: $slate-grey; // when you hover over buttons
+$link-color: $magenta; // when you hover over buttons
 
 
 
@@ -35,6 +37,11 @@ $link-color: $slate-grey; // when you hover over buttons
   font-size: 45px;
 }
 
+.subtitle {
+  font-family: "Raleway";
+  font-weight: 500;
+}
+
 // Headers
 h1, h2, h3 {
   font-family: "Vollkorn";
@@ -43,17 +50,26 @@ h1, h2, h3 {
 
 // Navbar
 .navbar {
+  font-family: "Righteous";
+}
+
+// Sidebar
+.sidebar {
   font-family: "Vollkorn";
+  font-weight: 600;
 }
 
 // Body
 body {
+  font-family: "Raleway";
   color: $dark-blue;
+  font-weight: 500;
+  
 }
 
 // Buttons (e.g. home buttons for email, Github, and Linkedin)
 div.quarto-about-trestles .about-entity .about-link {
-  color: $lavender;
+  color: $magenta;
 }
 
 // Hovering over buttons

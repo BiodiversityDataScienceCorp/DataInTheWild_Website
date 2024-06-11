@@ -1,39 +1,53 @@
 ---
 title: "Data In The Wild"
 subtitle: "An Introductory Data Science Course for the Life Sciences"
-about:
-  id: hero-heading
-  template: solana
-sidebar: FALSE
 ---
 
 ![](images/penguins.jpg)
 
-## Welcome!
-
-This course introduces students in the life sciences to data science through the application of quantitative reasoning and the R programming language to "real-world" problems. Below, you will find the overall narrative and material that will be covered. There are four modules that guide the student from their first steps on the Land of the Penguins, to building new roads for access to fishing sites. Each module will lead them through basic programming, data visualization, statistics, machine learning, and interpretation of quantitative concepts.
-
-------------------------------------------------------------------------
+Welcome! This course introduces students in the life sciences to data science through the application of quantitative reasoning and the R programming language to "real-world" problems. Below, you will find the overall narrative and material that will be covered. There are four modules that guide the student from their first steps on the Land of the Penguins, to building new roads for access to fishing sites. Each module will lead them through basic programming, data visualization, statistics, machine learning, and interpretation of quantitative concepts.
 
 ## The Narrative
 
-### **⊳ *MODULE 1: Mission Antarctica!***
+### **⊳** Module 1: *Mission Antarctica!*
 
 A new effort to establish a permanent, sustainable colony in Antarctica is being launched. Students are introduced to the field of data science, the application (RStudio, RMarkdown, Jupyter Notebooks), and programming language (R, Python) used in the course.
 
-### **⊳ *MODULE 2: Good Food Gone Bad***
+### **⊳** Module 2: *Good Food Gone Bad*
 
 There is a food poisoning outbreak among team members. Students use data visualization to determine where the problem lies (fish, not plants) and simulations to determine the root of the problem (fish tank density, not fish tank temperature).
 
-### **⊳ *MODULE 3: Follow That Seal***
+### **⊳** Module 3: *Follow That Seal*
 
 The fish tanks need to be restocked, but we want to avoid fishing in places with high leopard seal density, so we track the seals. However, the radio collars on leopard seals are failing and there is a deadly conflict between fish collectors and seals. The collars come from two different manufacturers, but we need to tell how the collars are failing (days to recharge, not signal distance) and how to classify collars of unknown provenance.
 
-### **⊳ *MODULE 4: March of the Penguins***
+### **⊳** Module 4: *March of the Penguins*
 
 A new road is needed to access fishing sites with low leopard seal density. There are several possible routes, but we want to avoid crossing through Gentoo penguin nesting grounds. Students will build models to determine predictors of nesting success, first with bootstrapping for confidence intervals, then with linear regression.
 
-------------------------------------------------------------------------
+## How to Navigate this Site
+
+Under Course Materials, you will find lessons taught in WFSC 223 at the University of Arizona as well as links download lectures, assignments, discussions, and other assets used for instruction.
+
+## Overall Learning Objectives
+
+By the end of the semester, you will be able to...
+
+-   Define, differentiate, and explain the nature and application of computational methods
+
+    for acquiring, managing, analyzing, visualizing, and sharing data as it relates to real-
+
+    world natural resource scenarios.
+
+-   Associate, examine, and compare how to infer meaning and insight from data through
+
+    written, visual, and verbal communication to multiple audiences.
+
+-   Summarize, implement, and appraise multiple perspectives and make meaningful
+
+    connections across disciplines and social positions, think conceptually and critically, and
+
+    solve problems with data informed approaches.
 
 ## Footnotes (For Instructors)
 

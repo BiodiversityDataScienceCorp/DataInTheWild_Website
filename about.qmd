@@ -1,17 +1,6 @@
 ---
-title: "Resources"
-image: images/bdsc-logo-hex.png
-about:
-  id: hero-heading
-  template: solana
-sidebar: FALSE
+title: "About Us"
 ---
-
-## Helpful Things
-
-\[Add helpful things here\]
-
-------------------------------------------------------------------------
 
 ## Contact Us
 

@@ -2,7 +2,7 @@
 title: "1.2: Introduction to Coding"
 ---
 
-## ⊳ Learning Outcomes
+## Learning Outcomes
 
 -   Students will be able to define the following terms:
     -   object
@@ -18,13 +18,11 @@ title: "1.2: Introduction to Coding"
 -   Students will be able to differentiate different data classes in R.
 -   Students will learn how to create their own data structures (vectors, data frames).
 
-## ⊳ Lecture / Code-along
+## Assigning Objects
 
-> ### Assigning Objects
->
-> Assignments are really key to almost everything we do in R. This is how we create permanence in R. Anything can be saved to an object, and we do this with the assignment operator, `<-`.
->
-> The short-cut for `<-` is `Alt + -` (or `Option + -` on a Mac)
+Assignments are really key to almost everything we do in R. This is how we create permanence in R. Anything can be saved to an object, and we do this with the assignment operator, `<-`.
+
+The short-cut for `<-` is `Alt + -` (or `Option + -` on a Mac)
 
 ```{r, message=FALSE, warning=FALSE}
 # Assigning Objects
@@ -37,11 +35,11 @@ mass_sq <- mass^2                   # raise to an exponent (2)
 
 ```
 
-> This is simple and you'll rarely do it in real-world scenarios.
->
-> ### 1-Dimensional Data: Vectors
->
-> We can also assign more complex group of elements of the same type to a particular object. This is called a **vector**, a basic data structure in R.
+This is simple and you'll rarely do it in real-world scenarios.
+
+## 1-Dimensional Data: Vectors
+
+We can also assign more complex group of elements of the same type to a particular object. This is called a **vector**, a basic data structure in R.
 
 ```{r, message=FALSE, warning=FALSE}
 # A group of mass values assigned to "mass_kg"
@@ -58,18 +56,18 @@ animals
 
 ```
 
-> R does everything in vectors
->
-> ### Data classes
->
-> There are a few main types in R, and they behave differently.
->
-> -   *Numeric:* numbers
->     -   Integer (no decimals allowed)
->     -   Double (decimals allowed --- interchangeable with numeric)
-> -   *Character:* letters or mixture
-> -   *Logical:* True or False; T or F
-> -   *Factors:* best used for data that need to be in a specific order; levels indicate the order
+R does everything in vectors
+
+## Data classes
+
+There are a few main types in R, and they behave differently.
+
+-   ***Numeric:*** numbers
+    -   Integer (no decimals allowed)
+    -   Double (decimals allowed --- interchangeable with numeric)
+-   ***Character:*** letters or mixture
+-   ***Logical:*** True or False; T or F
+-   ***Factors:*** best used for data that need to be in a specific order; levels indicate the order
 
 ```{r, message=FALSE, warning=FALSE}
 # Examples of different data classes
@@ -86,7 +84,7 @@ logic <- c(T, F, F, T)
 logic         # logical
 ```
 
-> Vectors have to contain elements that are all of the same class.
+Vectors have to contain elements that are all of the same class.
 
 ```{r, eval = FALSE, message=FALSE, warning=FALSE}
 # Will this become an object?
@@ -94,9 +92,9 @@ logic         # logical
 vec <- c(1, 1.000, "1")
 ```
 
-> #### Sub-setting Vectors
->
-> Sometimes we want to pull out and work with specific values from a vector. This is called sub-setting (taking a smaller set of the original). To signify which element of the vector we'd like to pull out, we can use a square bracket and the number of the element we are interested in taking.
+## Sub-setting Vectors
+
+Sometimes we want to pull out and work with specific values from a vector. This is called sub-setting (taking a smaller set of the original). To signify which element of the vector we'd like to pull out, we can use a square bracket and the number of the element we are interested in taking.
 
 ```{r, message=FALSE, warning=FALSE}
 # Use square brackets
@@ -106,11 +104,11 @@ mass_kg[2]        # Pull out second element in mass_kg
 mass_kg[2:4]      # Pull out 2nd, 3rd, and 4th elements from mass_kg
 ```
 
-> ### Functions
->
-> **Functions** are pre-written bits of codes that perform specific tasks for us. There are ones built into R (base R), but later in the course we will see that there are more specialized ones that we can equipt using another function called `library()`.
->
-> Functions are always followed by parentheses. Anything you type into the parentheses are called **arguments**.
+## Functions
+
+**Functions** are pre-written bits of codes that perform specific tasks for us. There are ones built into R (base R), but later in the course we will see that there are more specialized ones that we can equipt using another function called `library()`.
+
+Functions are always followed by parentheses. Anything you type into the parentheses are called **arguments**.
 
 ```{r, message=FALSE, warning=FALSE}
 # Functions
@@ -128,29 +126,29 @@ round(mass_kg_mean)
 round(mass_kg_mean, digits = 2) 
 ```
 
-> To get more information about a function, use the `help()` function or `? name_of_function`.
+To get more information about a function, use the `help()` function or `? name_of_function`.
 
 ```{r, message=FALSE, warning=FALSE, eval=FALSE}
 help(round) # or type ? help
 ```
 
-> We can use a function called `class()` to figure out the data type of a vector.
+We can use a function called `class()` to figure out the data type of a vector.
 
 ```{r, message=FALSE, warning=FALSE}
 # A function that tells us the class
 class(mass_kg)
 ```
 
-> #### Group Challenge
->
-> Let's practice! Write a few lines of code that do the following:
->
-> -   Create a vector with numbers from 6 to 1 (6, 5, 4, 3, 2, 1)
-> -   Assign the vector to an object named `vec`
-> -   Subset `vec` to include the last 3 numbers (should include 3, 2, 1)
-> -   Find the sum of the numbers (hint: use the `sum()` function)
->
-> *Answer:* 6
+### Group Challenge
+
+Let's practice! Write a few lines of code that do the following:
+
+-   Create a vector with numbers from 6 to 1 (6, 5, 4, 3, 2, 1)
+-   Assign the vector to an object named `vec`
+-   Subset `vec` to include the last 3 numbers (should include 3, 2, 1)
+-   Find the sum of the numbers (hint: use the `sum()` function)
+
+***Answer:*** 6
 
 ```{r, message=FALSE, warning=FALSE}
 # Make vector
@@ -169,7 +167,7 @@ vec
 sum(vec)
 ```
 
-> Already finished? See if you can condense your code down any further or turn around and help out a neighbor.
+Already finished? See if you can condense your code down any further or turn around and help out a neighbor.
 
 ```{r, message=FALSE, warning=FALSE}
 # Auto-generate sequence of numbers 6 to 1
@@ -181,16 +179,16 @@ vec <- seq(6, 1)
 sum(vec[4:6])
 ```
 
-> ### 2-Dimensional Data: Data Frames
->
-> Most of the data you will encounter is two-dimensional, i.e., it has columns and rows. Its structure resembles a spreadsheet. R is really good with these types of data.
->
-> -   **Rows** go side-to-side
-> -   **Columns** go up-and-down
->
-> ![](assets/row_column.png)
->
-> Data frames are made up of multiple vectors. Each vector becomes a column.
+## 2-Dimensional Data: Data Frames
+
+Most of the data you will encounter is two-dimensional, i.e., it has columns and rows. Its structure resembles a spreadsheet. R is really good with these types of data.
+
+-   **Rows** go side-to-side
+-   **Columns** go up-and-down
+
+![](assets/row_column.png)
+
+Data frames are made up of multiple vectors. Each vector becomes a column.
 
 ```{r, message=FALSE, warning=FALSE}
 # Create a simple data frame
@@ -203,11 +201,11 @@ plants <- data.frame(height = c(55, 17, 42, 47, 68, 39),
 plants
 ```
 
-> #### Sub-setting Data Frames
->
-> Because data frames are two-dimensional, we can subset data in different ways. We can select specific columns, specific rows, or filter rows by values.
->
-> R always takes information for the row first, then the column.
+### Sub-setting Data Frames
+
+Because data frames are two-dimensional, we can subset data in different ways. We can select specific columns, specific rows, or filter rows by values.
+
+R always takes information for the row first, then the column.
 
 ```{r, message=FALSE, warning=FALSE}
 # Sub-setting data frames
@@ -223,20 +221,20 @@ plants[4,1]
 plants[, 2]
 ```
 
-> Another way to pull out a single column from a data frame is with the `$` operator. This can really come in handy when you know the name of the column but not the position.
+Another way to pull out a single column from a data frame is with the `$` operator. This can really come in handy when you know the name of the column but not the position.
 
 ```{r, message=FALSE, warning=FALSE}
 # Get "height" column
 plants$height
 ```
 
-> Ideally, after typing `$`, R should give you a drop down list of all the column names that you can select from. Sometimes that doesn't happen though, and that's okay! You can also find column names / numbers by opening and looking through your data frame object in the Environment.
->
-> #### Discussion Point
->
-> This is a simple data set, but let's come up with some questions.
->
-> Example: Height of plants treated with nitrogen vs. those not treated.
+Ideally, after typing `$`, R should give you a drop down list of all the column names that you can select from. Sometimes that doesn't happen though, and that's okay! You can also find column names / numbers by opening and looking through your data frame object in the Environment.
+
+### Discussion Point
+
+This is a simple data set, but let's come up with some questions.
+
+Example: Height of plants treated with nitrogen vs. those not treated.
 
 ```{r, message=FALSE, warning=FALSE}
 # Filter rows based on values in the nitrogen column
@@ -249,11 +247,11 @@ mean(plants[plants$nitrogen == "Y", 1])
 
 ```
 
-> #### Group Challenge (5 min)
->
-> Using help files on functions
->
-> As a group, find the standard deviation (`sd()`) of the height of plants treated with nitrogen and those not treated with nitrogen. Which group has the larger standard deviation?
+### Group Challenge
+
+Using help files on functions
+
+As a group, find the standard deviation (`sd()`) of the height of plants treated with nitrogen and those not treated with nitrogen. Which group has the larger standard deviation?
 
 ```{r, message=FALSE, warning=FALSE}
 # Standard deviation of plants treated with nitrogen
@@ -264,17 +262,17 @@ sd(plants[plants$nitrogen == "N", 1])
 
 ```
 
-> Come up with a definition of standard deviation (Google is your friend!), use the help file (`help()` or `? function`) to find out how the `sd()` function works, and be prepared to show the code you used.
->
-> ### Helpful Functions
->
-> Below are some functions that I often find very helpful when working with vectors and data frames:
->
-> -   `str()`
-> -   `head()` and `tail()`
-> -   `length()`
-> -   `ncol()` and `nrow()`
-> -   `names()`
+Come up with a definition of standard deviation (Google is your friend!), use the help file (`help()` or `? function`) to find out how the `sd()` function works, and be prepared to show the code you used.
+
+## Helpful Functions
+
+Below are some functions that I often find very helpful when working with vectors and data frames:
+
+-   `str()`
+-   `head()` and `tail()`
+-   `length()`
+-   `ncol()` and `nrow()`
+-   `names()`
 
 ```{r, message=FALSE, warning=FALSE}
 # Structure of the object

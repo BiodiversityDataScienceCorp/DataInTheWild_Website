@@ -1,5 +1,5 @@
 ---
-title: "Using Functions to Automate Tasks"
+title: "4.3: Using Functions to Automate Tasks"
 ---
 
 ## Introduction

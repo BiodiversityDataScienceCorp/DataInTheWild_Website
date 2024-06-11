@@ -1,6 +1,16 @@
 ---
-title: "1.1: Introduction to RStudio"
+title: "Module 1: Introduction to R and RStudio"
+author: "Keaton Wilson, Ellen Bledsoe"
+date: "11/22/2019, revised February 2024"
+output:
+  pdf_document: default
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction to R/RStudio
 
 ## Learning Outcomes
 
@@ -9,14 +19,15 @@ title: "1.1: Introduction to RStudio"
 -   Students will be able to describe the utility of each panel in RStudio.
 -   Students will be able to perform basic math functions in the R console.
 
-## Rstudio Mini-Tour
+## Check-in (5 minutes)
 
-Sign up for RStudio
+Let's all sign-up for RStudio Cloud!
 
-Perform a live-coding mini-tour of RStudio. - edit this section maybe
+## Rstudio Mini-tour
 
-1.  What do the different panels do?
-2.  Console versus a script/Rmarkdown file
+Perform a live-coding mini-tour of RStudio.\
+1. What do the different panels do?\
+2. Console versus a script/Rmarkdown file
 
 ## Using R as a Calculator
 
@@ -26,9 +37,9 @@ You can do basic math in the Console (the bottom left part of the screen). The C
 
 Try multiplying 5 and 3 in the Console (hint: \* means multiply). Hit `Enter` to run that line of code.
 
-### R Markdown and Code Chunks
+### Rmarkdown and Code Chunks
 
-R Markdown (.Rmd) is a file format that lets us incorporate text and code into one document seamlessly. In fact, it is the file format for this document!
+Rmarkdown (.Rmd) is a file format that lets us incorporate text and code into one document seamlessly. In fact, it is the file format for this document!
 
 -   For writing text, you can type as you normally would.
 -   Code chunks are a bit different:
@@ -41,6 +52,7 @@ Code chunks look like this:
 
 ```{r}
 # This is a code chunk!
+
 ```
 
 A quick shortcut for adding a code chunk is `Ctrl + Alt + i` (`Cmd + Opt + i` on a Mac).
@@ -55,19 +67,11 @@ You can also run one or a few lines of code at a time by having your cursor on t
 
 Let's work with an example code chunk.
 
-```{r, message=FALSE, warning=FALSE}
-# I am adding a comment to my code here.
+```{r}
 
-432 - 11     # subtraction
-
-12 + 18      # addition
-
-8 / 4        # division
-
-3 * 5        # multiplication
 ```
 
-Notice that if you run code in the Console rather than the code chunk in an R Markdown (.Rmd) file, you don't need to add the `{r}` to tell it that you are typing R code. The Console only understands R code anyway, so we don't need to tell it what it is!
+Notice that if you run code in the Console (below) rather than the code chunk in a .Rmd file, you don't need to add the `{r}` to tell it that you are typing R code. The Console only understands R code anyway, so we don't need to tell it what it is!
 
 ### Math: Small Group Challenge
 
@@ -77,10 +81,6 @@ First, write and run the code in the console.
 
 Next, write and run the code in the code chunk below. What did you have to do differently?
 
-```{r, message=FALSE, warning=FALSE}
-# 1) Console: 2^3 + Enter
+```{r}
 
-# 2) Code chunk: 2^3 + Green arrow *OR* 2^3 + Ctrl + Shift
-
-2^3
 ```
