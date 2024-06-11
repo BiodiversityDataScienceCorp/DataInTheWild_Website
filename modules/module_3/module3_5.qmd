@@ -55,7 +55,7 @@ First, we need our data!
 library(tidyverse)
 
 # Load data
-full_collars <- read_csv("../data/all_collar_data.csv")
+full_collars <- read_csv("data/all_collar_data.csv")
 ```
 
 Next, we need to scale our data.
