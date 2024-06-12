@@ -59,12 +59,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
 <link href="../../images/bdsc-logo-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,12 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -114,7 +104,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
         <div class="quarto-navbar-tools ms-auto">
 </div>
-          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -158,6 +147,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/BiodiversityDataScienceCorp" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contact Us</span></a>
   </div>
 </li>
       </ul>
@@ -309,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module_4/module4_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Functions to Automate Tasks</span></a>
+ <span class="menu-text">4.3: Using Functions to Automate Tasks</span></a>
   </div>
 </li>
       </ul>
@@ -325,8 +320,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About Us</span></a>
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learn More!</span></a>
   </div>
 </li>
       </ul>
@@ -336,9 +331,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#assigning-objects" id="toc-assigning-objects" class="nav-link" data-scroll-target="#assigning-objects">Assigning Objects</a></li>
+  <li><a href="#dimensional-data-vectors" id="toc-dimensional-data-vectors" class="nav-link" data-scroll-target="#dimensional-data-vectors">1-Dimensional Data: Vectors</a></li>
+  <li><a href="#data-classes" id="toc-data-classes" class="nav-link" data-scroll-target="#data-classes">Data classes</a></li>
+  <li><a href="#sub-setting-vectors" id="toc-sub-setting-vectors" class="nav-link" data-scroll-target="#sub-setting-vectors">Sub-setting Vectors</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a>
+  <ul class="collapse">
+  <li><a href="#challenge" id="toc-challenge" class="nav-link" data-scroll-target="#challenge">Challenge</a></li>
+  </ul></li>
+  <li><a href="#dimensional-data-data-frames" id="toc-dimensional-data-data-frames" class="nav-link" data-scroll-target="#dimensional-data-data-frames">2-Dimensional Data: Data Frames</a>
+  <ul class="collapse">
+  <li><a href="#sub-setting-data-frames" id="toc-sub-setting-data-frames" class="nav-link" data-scroll-target="#sub-setting-data-frames">Sub-setting Data Frames</a></li>
+  <li><a href="#discussion-point" id="toc-discussion-point" class="nav-link" data-scroll-target="#discussion-point">Discussion Point</a></li>
+  <li><a href="#challenge-using-help-files-on-functions" id="toc-challenge-using-help-files-on-functions" class="nav-link" data-scroll-target="#challenge-using-help-files-on-functions">Challenge: Using help files on functions</a></li>
+  </ul></li>
+  <li><a href="#helpful-functions" id="toc-helpful-functions" class="nav-link" data-scroll-target="#helpful-functions">Helpful Functions</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="module1_2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -358,7 +376,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <section id="learning-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcomes">⊳ Learning Outcomes</h2>
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
 <ul>
 <li>Students will be able to define the following terms:
 <ul>
@@ -377,13 +395,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Students will learn how to create their own data structures (vectors, data frames).</li>
 </ul>
 </section>
-<section id="lecture-code-along" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-code-along">⊳ Lecture / Code-along</h2>
-<blockquote class="blockquote">
-<h3 id="assigning-objects" class="anchored">Assigning Objects</h3>
+<section id="assigning-objects" class="level2">
+<h2 class="anchored" data-anchor-id="assigning-objects">Assigning Objects</h2>
 <p>Assignments are really key to almost everything we do in R. This is how we create permanence in R. Anything can be saved to an object, and we do this with the assignment operator, <code>&lt;-</code>.</p>
 <p>The short-cut for <code>&lt;-</code> is <code>Alt + -</code> (or <code>Option + -</code> on a Mac)</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assigning Objects</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mass <span class="ot">&lt;-</span> <span class="fl">47.5</span>                        <span class="co"># assign 47.5 to "mass" (in kg)</span></span>
@@ -393,11 +408,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>mass_index <span class="ot">&lt;-</span> mass<span class="sc">/</span>age              <span class="co"># divide mass by age</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>mass_sq <span class="ot">&lt;-</span> mass<span class="sc">^</span><span class="dv">2</span>                   <span class="co"># raise to an exponent (2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
 <p>This is simple and you’ll rarely do it in real-world scenarios.</p>
-<h3 id="dimensional-data-vectors" class="anchored">1-Dimensional Data: Vectors</h3>
+</section>
+<section id="dimensional-data-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="dimensional-data-vectors">1-Dimensional Data: Vectors</h2>
 <p>We can also assign more complex group of elements of the same type to a particular object. This is called a <strong>vector</strong>, a basic data structure in R.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A group of mass values assigned to "mass_kg"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>mass_kg <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">7</span>, <span class="dv">3</span>, <span class="dv">6</span>)</span>
@@ -416,21 +431,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] "cat" "rat" "bat"</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>R does everything in vectors</p>
-<h3 id="data-classes" class="anchored">Data classes</h3>
+</section>
+<section id="data-classes" class="level2">
+<h2 class="anchored" data-anchor-id="data-classes">Data classes</h2>
 <p>There are a few main types in R, and they behave differently.</p>
 <ul>
-<li><em>Numeric:</em> numbers
+<li><strong><em>Numeric:</em></strong> numbers
 <ul>
 <li>Integer (no decimals allowed)</li>
 <li>Double (decimals allowed — interchangeable with numeric)</li>
 </ul></li>
-<li><em>Character:</em> letters or mixture</li>
-<li><em>Logical:</em> True or False; T or F</li>
-<li><em>Factors:</em> best used for data that need to be in a specific order; levels indicate the order</li>
+<li><strong><em>Character:</em></strong> letters or mixture</li>
+<li><strong><em>Logical:</em></strong> True or False; T or F</li>
+<li><strong><em>Factors:</em></strong> best used for data that need to be in a specific order; levels indicate the order</li>
 </ul>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Examples of different data classes</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -456,18 +471,16 @@ Levels: large medium small</code></pre>
 <pre><code>[1]  TRUE FALSE FALSE  TRUE</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Vectors have to contain elements that are all of the same class.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Will this become an object?</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># We will try putting in an integer, double, and character</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">1.000</span>, <span class="st">"1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h4 id="sub-setting-vectors" class="anchored">Sub-setting Vectors</h4>
+</section>
+<section id="sub-setting-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="sub-setting-vectors">Sub-setting Vectors</h2>
 <p>Sometimes we want to pull out and work with specific values from a vector. This is called sub-setting (taking a smaller set of the original). To signify which element of the vector we’d like to pull out, we can use a square bracket and the number of the element we are interested in taking.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use square brackets</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -480,11 +493,11 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 2 4 9</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h3 id="functions" class="anchored">Functions</h3>
-<p><strong>Functions</strong> are pre-written bits of codes that perform specific tasks for us. There are ones built into R (base R), but later in the course we will see that there are more specialized ones that we can equipt using another function called <code>library()</code>.</p>
+</section>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<p><strong>Functions</strong> are pre-written bits of codes that perform specific tasks for us. There are ones built into R (base R), but later in the course we will see that there are more specialized ones that we can equip using another function called <code>library()</code>.</p>
 <p>Functions are always followed by parentheses. Anything you type into the parentheses are called <strong>arguments</strong>.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Functions</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -507,15 +520,11 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 4.86</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>To get more information about a function, use the <code>help()</code> function or <code>? name_of_function</code>.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(round) <span class="co"># or type ? help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
 <p>We can use a function called <code>class()</code> to figure out the data type of a vector.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A function that tells us the class</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(mass_kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -523,8 +532,8 @@ Levels: large medium small</code></pre>
 <pre><code>[1] "numeric"</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h4 id="group-challenge" class="anchored">Group Challenge</h4>
+<section id="challenge" class="level3">
+<h3 class="anchored" data-anchor-id="challenge">Challenge</h3>
 <p>Let’s practice! Write a few lines of code that do the following:</p>
 <ul>
 <li>Create a vector with numbers from 6 to 1 (6, 5, 4, 3, 2, 1)</li>
@@ -532,8 +541,7 @@ Levels: large medium small</code></pre>
 <li>Subset <code>vec</code> to include the last 3 numbers (should include 3, 2, 1)</li>
 <li>Find the sum of the numbers (hint: use the <code>sum()</code> function)</li>
 </ul>
-<p><em>Answer:</em> 6</p>
-</blockquote>
+<p><strong><em>Answer:</em></strong> 6</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make vector</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
@@ -557,9 +565,7 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 6</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<p>Already finished? See if you can condense your code down any further or turn around and help out a neighbor.</p>
-</blockquote>
+<p>Already finished? See if you can condense your code down any further.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Auto-generate sequence of numbers 6 to 1</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">6</span>, <span class="dv">1</span>)</span>
@@ -572,8 +578,10 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 6</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h3 id="dimensional-data-data-frames" class="anchored">2-Dimensional Data: Data Frames</h3>
+</section>
+</section>
+<section id="dimensional-data-data-frames" class="level2">
+<h2 class="anchored" data-anchor-id="dimensional-data-data-frames">2-Dimensional Data: Data Frames</h2>
 <p>Most of the data you will encounter is two-dimensional, i.e., it has columns and rows. Its structure resembles a spreadsheet. R is really good with these types of data.</p>
 <ul>
 <li><strong>Rows</strong> go side-to-side</li>
@@ -581,7 +589,6 @@ Levels: large medium small</code></pre>
 </ul>
 <p><img src="assets/row_column.png" class="img-fluid"></p>
 <p>Data frames are made up of multiple vectors. Each vector becomes a column.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a simple data frame</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co"># First column is plant heights</span></span>
@@ -601,11 +608,10 @@ Levels: large medium small</code></pre>
 6     39        N</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h4 id="sub-setting-data-frames" class="anchored">Sub-setting Data Frames</h4>
+<section id="sub-setting-data-frames" class="level3">
+<h3 class="anchored" data-anchor-id="sub-setting-data-frames">Sub-setting Data Frames</h3>
 <p>Because data frames are two-dimensional, we can subset data in different ways. We can select specific columns, specific rows, or filter rows by values.</p>
 <p>R always takes information for the row first, then the column.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sub-setting data frames</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -624,9 +630,7 @@ Levels: large medium small</code></pre>
 <pre><code>[1] "Y" "N" "N" "Y" "Y" "N"</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Another way to pull out a single column from a data frame is with the <code>$</code> operator. This can really come in handy when you know the name of the column but not the position.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get "height" column</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>plants<span class="sc">$</span>height</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -634,12 +638,12 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 55 17 42 47 68 39</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Ideally, after typing <code>$</code>, R should give you a drop down list of all the column names that you can select from. Sometimes that doesn’t happen though, and that’s okay! You can also find column names / numbers by opening and looking through your data frame object in the Environment.</p>
-<h4 id="discussion-point" class="anchored">Discussion Point</h4>
+</section>
+<section id="discussion-point" class="level3">
+<h3 class="anchored" data-anchor-id="discussion-point">Discussion Point</h3>
 <p>This is a simple data set, but let’s come up with some questions.</p>
-<p>Example: Height of plants treated with nitrogen vs.&nbsp;those not treated.</p>
-</blockquote>
+<p><em>Example</em>: Height of plants treated with nitrogen vs.&nbsp;those not treated.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter rows based on values in the nitrogen column</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -657,11 +661,10 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 56.66667</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h4 id="group-challenge-5-min" class="anchored">Group Challenge (5 min)</h4>
-<p>Using help files on functions</p>
-<p>As a group, find the standard deviation (<code>sd()</code>) of the height of plants treated with nitrogen and those not treated with nitrogen. Which group has the larger standard deviation?</p>
-</blockquote>
+</section>
+<section id="challenge-using-help-files-on-functions" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-using-help-files-on-functions">Challenge: Using help files on functions</h3>
+<p>Find the standard deviation (<code>sd()</code>) of the height of plants treated with nitrogen and those not treated with nitrogen. Which group has the larger standard deviation?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standard deviation of plants treated with nitrogen</span></span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(plants[plants<span class="sc">$</span>nitrogen <span class="sc">==</span> <span class="st">"Y"</span>, <span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -674,9 +677,11 @@ Levels: large medium small</code></pre>
 <pre><code>[1] 13.6504</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Come up with a definition of standard deviation (Google is your friend!), use the help file (<code>help()</code> or <code>? function</code>) to find out how the <code>sd()</code> function works, and be prepared to show the code you used.</p>
-<h3 id="helpful-functions" class="anchored">Helpful Functions</h3>
+</section>
+</section>
+<section id="helpful-functions" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-functions">Helpful Functions</h2>
 <p>Below are some functions that I often find very helpful when working with vectors and data frames:</p>
 <ul>
 <li><code>str()</code></li>
@@ -685,7 +690,6 @@ Levels: large medium small</code></pre>
 <li><code>ncol()</code> and <code>nrow()</code></li>
 <li><code>names()</code></li>
 </ul>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Structure of the object</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(plants) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -990,7 +994,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2024, University of Arizona | Last modified: 7 June 2024</div>   
+    <div class="nav-footer-left">Copyright 2024, University of Arizona | Last modified: 12 June 2024</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

@@ -59,12 +59,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
 <link href="../../images/bdsc-logo-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,12 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -114,7 +104,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
         <div class="quarto-navbar-tools ms-auto">
 </div>
-          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -158,6 +147,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/BiodiversityDataScienceCorp" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contact Us</span></a>
   </div>
 </li>
       </ul>
@@ -309,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module_4/module4_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Functions to Automate Tasks</span></a>
+ <span class="menu-text">4.3: Using Functions to Automate Tasks</span></a>
   </div>
 </li>
       </ul>
@@ -325,8 +320,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About Us</span></a>
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learn More!</span></a>
   </div>
 </li>
       </ul>
@@ -336,9 +331,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#aquaculture-immunology-and-disease" id="toc-aquaculture-immunology-and-disease" class="nav-link" data-scroll-target="#aquaculture-immunology-and-disease">Aquaculture, Immunology, and Disease</a>
+  <ul class="collapse">
+  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration">Data Exploration</a></li>
+  <li><a href="#the-data-we-have" id="toc-the-data-we-have" class="nav-link" data-scroll-target="#the-data-we-have">The Data We Have</a></li>
+  <li><a href="#discussion-of-the-problem" id="toc-discussion-of-the-problem" class="nav-link" data-scroll-target="#discussion-of-the-problem">Discussion of the problem</a></li>
+  </ul></li>
+  <li><a href="#custom-functions" id="toc-custom-functions" class="nav-link" data-scroll-target="#custom-functions">Custom Functions</a>
+  <ul class="collapse">
+  <li><a href="#general-syntax-example" id="toc-general-syntax-example" class="nav-link" data-scroll-target="#general-syntax-example">General Syntax Example</a></li>
+  <li><a href="#building-our-custom-function" id="toc-building-our-custom-function" class="nav-link" data-scroll-target="#building-our-custom-function">Building Our Custom Function</a></li>
+  <li><a href="#thinking-about-iteration" id="toc-thinking-about-iteration" class="nav-link" data-scroll-target="#thinking-about-iteration">Thinking about Iteration</a></li>
+  </ul></li>
+  <li><a href="#why-functions" id="toc-why-functions" class="nav-link" data-scroll-target="#why-functions">Why Functions?</a>
+  <ul class="collapse">
+  <li><a href="#main-ways-to-iterate" id="toc-main-ways-to-iterate" class="nav-link" data-scroll-target="#main-ways-to-iterate">Main Ways to Iterate</a></li>
+  <li><a href="#filtering-our-data" id="toc-filtering-our-data" class="nav-link" data-scroll-target="#filtering-our-data">Filtering Our Data</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="module2_2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -921,7 +941,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2024, University of Arizona | Last modified: 7 June 2024</div>   
+    <div class="nav-footer-left">Copyright 2024, University of Arizona | Last modified: 12 June 2024</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

@@ -1,8 +1,10 @@
 project:
+
   type: website
   output-dir: docs
 
 website:
+
   title: "Data In The Wild"
   favicon: images/bdsc-logo-hex.png
   search: false
@@ -12,6 +14,7 @@ website:
         
   sidebar:
       logo: images/bdsc-logo-hex.png
+      background: $blanched-almond
       align: center 
       style: docked
       collapse-level: 1
@@ -21,6 +24,8 @@ website:
           contents: 
             - index.qmd
             - structure.qmd
+            - text: "Contact Us"
+              href: https://github.com/BiodiversityDataScienceCorp
             
         - section: "Module 1"
           contents: 
@@ -54,12 +59,12 @@ website:
             
         - section: "Resources"
           contents: 
-            - about.qmd
+            - resources.qmd
         
   page-footer: 
     background: $dark-blue
     foreground: $blanched-almond
-    left: "Copyright 2024, University of Arizona | Last modified: 7 June 2024"
+    left: "Copyright 2024, University of Arizona | Last modified: 12 June 2024"
     right: 
       - href: https://quarto.org/
         text: "Made with Quarto"
@@ -67,11 +72,14 @@ website:
         icon: github
 
 format:
+
   html:
     theme:
       - styles.scss
     mainfont: "Raleway"
+    toc: true
     page-layout: full
+  pdf: default
 
 editor: visual
 

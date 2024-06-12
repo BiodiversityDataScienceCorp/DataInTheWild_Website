@@ -1,0 +1,12 @@
+---
+title: "Learn More!"
+format: 
+  html: 
+    toc: false
+---
+
+There are many external resources if you're interested in learning more about the R language, and any programming language really. Here, we have compiled a list of some places you might turn to for additional nuggets of knowledge.
+
+-   Jeff Oliver (one of the people who helped develop this course) holds workshops for both students and instructors at the University of Arizona and beyond. Here is one of his lesson sequences for novices in R: [learn-r (jcoliver.github.io)](https://jcoliver.github.io/learn-r/)
+
+-   If you enjoy the customization of visualizations as much as I do, here is a good resource: [R CHARTS \| A collection of charts and graphs made with the R programming language (r-charts.com)](https://r-charts.com/)

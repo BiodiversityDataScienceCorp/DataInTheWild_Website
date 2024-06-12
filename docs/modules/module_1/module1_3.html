@@ -59,12 +59,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
 <link href="../../images/bdsc-logo-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,12 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -112,30 +102,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="navbar-title">Data In The Wild</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../course_materials.html" rel="" target="" aria-current="page">
- <span class="menu-text">Course Materials</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">Resources</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools ms-auto">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -153,27 +121,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bdsc-logo-hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Introduction</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../course_materials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data In The Wild</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/BiodiversityDataScienceCorp" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contact Us</span></a>
   </div>
 </li>
       </ul>
@@ -209,13 +188,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
  <span class="menu-text">Module 2</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module_2/module2_1.html" class="sidebar-item-text sidebar-link">
@@ -262,13 +241,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
  <span class="menu-text">Module 3</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module_3/module3_1.html" class="sidebar-item-text sidebar-link">
@@ -303,13 +282,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
  <span class="menu-text">Module 4</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module_4/module4_1.html" class="sidebar-item-text sidebar-link">
@@ -325,7 +304,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module_4/module4_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Functions to Automate Tasks</span></a>
+ <span class="menu-text">4.3: Using Functions to Automate Tasks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learn More!</span></a>
   </div>
 </li>
       </ul>
@@ -335,9 +331,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#the-tidyverse-what-is-it" id="toc-the-tidyverse-what-is-it" class="nav-link" data-scroll-target="#the-tidyverse-what-is-it">The <code>tidyverse</code>: What is it?</a>
+  <ul class="collapse">
+  <li><a href="#wait-what-is-a-package" id="toc-wait-what-is-a-package" class="nav-link" data-scroll-target="#wait-what-is-a-package">Wait, what is a package??</a></li>
+  <li><a href="#explore-the-tidyverse" id="toc-explore-the-tidyverse" class="nav-link" data-scroll-target="#explore-the-tidyverse">Explore the <code>tidyverse</code></a></li>
+  </ul></li>
+  <li><a href="#practice-with-the-tidyverse" id="toc-practice-with-the-tidyverse" class="nav-link" data-scroll-target="#practice-with-the-tidyverse">Practice with the <code>tidyverse</code></a>
+  <ul class="collapse">
+  <li><a href="#download-and-install" id="toc-download-and-install" class="nav-link" data-scroll-target="#download-and-install">Download and install</a></li>
+  <li><a href="#load-into-r" id="toc-load-into-r" class="nav-link" data-scroll-target="#load-into-r">Load into R</a></li>
+  <li><a href="#climate-data" id="toc-climate-data" class="nav-link" data-scroll-target="#climate-data">Climate Data</a></li>
+  </ul></li>
+  <li><a href="#selecting-columns" id="toc-selecting-columns" class="nav-link" data-scroll-target="#selecting-columns"><code>select()</code>ing columns</a>
+  <ul class="collapse">
+  <li><a href="#lets-practice" id="toc-lets-practice" class="nav-link" data-scroll-target="#lets-practice">Let’s practice!</a></li>
+  </ul></li>
+  <li><a href="#filtering-rows" id="toc-filtering-rows" class="nav-link" data-scroll-target="#filtering-rows"><code>filter()</code>ing rows</a></li>
+  <li><a href="#lets-practice-using-select-and-filter" id="toc-lets-practice-using-select-and-filter" class="nav-link" data-scroll-target="#lets-practice-using-select-and-filter">Let’s practice using <code>select()</code> and <code>filter()</code></a></li>
+  <li><a href="#the-pipe" id="toc-the-pipe" class="nav-link" data-scroll-target="#the-pipe">The pipe <code>%&gt;%</code></a>
+  <ul class="collapse">
+  <li><a href="#lets-practice-1" id="toc-lets-practice-1" class="nav-link" data-scroll-target="#lets-practice-1">Let’s practice!</a></li>
+  </ul></li>
+  <li><a href="#creating-new-variables-with-mutate" id="toc-creating-new-variables-with-mutate" class="nav-link" data-scroll-target="#creating-new-variables-with-mutate">Creating new variables with <code>mutate()</code></a></li>
+  <li><a href="#understanding-data-through-summarize" id="toc-understanding-data-through-summarize" class="nav-link" data-scroll-target="#understanding-data-through-summarize">Understanding data through <code>summarize()</code></a></li>
+  <li><a href="#split-apply-combine-with-group_by" id="toc-split-apply-combine-with-group_by" class="nav-link" data-scroll-target="#split-apply-combine-with-group_by">Split, Apply, Combine with <code>group_by()</code></a>
+  <ul class="collapse">
+  <li><a href="#lets-practice-2" id="toc-lets-practice-2" class="nav-link" data-scroll-target="#lets-practice-2">Let’s practice!</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="module1_3.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -357,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <section id="learning-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcomes">⊳ Learning Outcomes</h2>
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
 <ul>
 <li>Students will be able to load packages.</li>
 <li>Students will be able to use some functions of the tidyverse: select, filter, the pipe, mutate, summarize, and group by.</li>
@@ -365,16 +396,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Students will able to use tidyverse functions to summarize real-world data.</li>
 </ul>
 </section>
-<section id="lecture-code-along" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-code-along">⊳ Lecture / Code-along</h2>
-<blockquote class="blockquote">
-<h3 id="the-tidyverse-what-is-it" class="anchored">The <code>tidyverse</code>: What is it?</h3>
+<section id="the-tidyverse-what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="the-tidyverse-what-is-it">The <code>tidyverse</code>: What is it?</h2>
 <p>Different programming languages have different syntax (language structure). The <code>tidyverse</code> is a package (more accurately, a set of packages) offered in R that all have similar goals and a unified syntax designed to work particularly well with 2-dimensional data.</p>
 <p>Until now, all of the coding we have done is in the original R language, which is often called “base R.” The syntax in the <code>tidyverse</code> is often pretty different from base R. Both are useful, and many people often combine them, which is why we start with base R.</p>
 <p>That said, we will be primarily using the <code>tidyverse</code> for the rest of the semester. With the exception of Module 1 Assignment 3, which is exclusively about <code>tidyverse</code>, I will never punish you for using base R in place of <code>tidyverse</code>, as long as you get the same answer!</p>
-<h4 id="wait-what-is-a-package" class="anchored">Wait, what is a package??</h4>
+<section id="wait-what-is-a-package" class="level3">
+<h3 class="anchored" data-anchor-id="wait-what-is-a-package">Wait, what is a package??</h3>
 <p>Packages are one of the neatest things of working in an open-source environment like R! They contains bits of code (often in the form of functions) that can be reused, making them a core component of reproducible data science. Anyone can develop a package, and there are thousands of them doing all sorts of things.</p>
-<h4 id="explore-the-tidyverse" class="anchored">Explore the <code>tidyverse</code></h4>
+</section>
+<section id="explore-the-tidyverse" class="level3">
+<h3 class="anchored" data-anchor-id="explore-the-tidyverse">Explore the <code>tidyverse</code></h3>
 <p>If you want to learn more about the tidyverse, head over to <a href="www.tidyverse.org">www.tidyverse.org</a> and browse the site. Below is a brief summary of <em>some</em> of the packages I think you might find the most useful.</p>
 <ul>
 <li><code>tidyr</code>: creating data that is consistent in form/shape</li>
@@ -385,15 +417,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>stringr</code>: easy manipulation of strings (character data)</li>
 <li><code>lubridate</code>: easy manipulation of time and date values</li>
 </ul>
-<h3 id="practice-with-the-tidyverse" class="anchored">Practice with the <code>tidyverse</code></h3>
-<h4 id="download-and-install" class="anchored">Download and install</h4>
+</section>
+</section>
+<section id="practice-with-the-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="practice-with-the-tidyverse">Practice with the <code>tidyverse</code></h2>
+<section id="download-and-install" class="level3">
+<h3 class="anchored" data-anchor-id="download-and-install">Download and install</h3>
 <p>In most scenarios, you will need to download a package from the internet onto your computer before you can use it in RStudio. However, with RStudio Cloud, I’ve already done this step for you!</p>
 <p>For future reference, though:</p>
 <ul>
 <li>you usually only need to go through this process once until you update R</li>
 <li>we use the function <code>install.packages()</code> to download the package</li>
 </ul>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download and install the tidyverse package(s)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -401,8 +436,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("tidyverse")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h4 id="load-into-r" class="anchored">Load into R</h4>
+</section>
+<section id="load-into-r" class="level3">
+<h3 class="anchored" data-anchor-id="load-into-r">Load into R</h3>
 <p>Any time we open R/RStudio and want to use functions from the <code>tidyverse</code>, we need to “load” the package. We use the <code>library()</code> function to do this.</p>
 <p>When you run this code, you’ll see a message that says “Attaching packages” and “Conflicts.” Don’t panic!</p>
 <ul>
@@ -412,15 +448,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>If you’re curious, though, it is telling us that there are some functions in the <code>tidyverse</code> that have the same names as functions that are automatically installed with R and that the <code>tidyverse</code> versions of those functions will be the ones that get used by default unless we specify otherwise.</li>
 </ul></li>
 </ul>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tidyverse (tell RStudio we want to use this package in this session)</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h4 id="climate-data" class="anchored">Climate Data</h4>
+</section>
+<section id="climate-data" class="level3">
+<h3 class="anchored" data-anchor-id="climate-data">Climate Data</h3>
 <p>To learn about the <code>tidyverse</code> syntax, we’re going to use a real data set on climate change from Berkeley, CA, USA. It outlines temperatures in major cities across the world since 1750.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the data file</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -449,10 +484,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 1 more variable: Longitude &lt;chr&gt;</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>The <code>tidyverse</code> converts 2D data into something called a tibble! For our intents and purposes, it is basically the same as a data frame (and I’ll probably call it a data frame, in reality).</p>
 <p>Let’s take a look at our tibble (A.K.A. data frame).</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Explore the data set</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -495,11 +528,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h3 id="selecting-columns" class="anchored"><code>select()</code>ing columns</h3>
+</section>
+</section>
+<section id="selecting-columns" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-columns"><code>select()</code>ing columns</h2>
 <p>Let’s use our first function, <code>select()</code>. Select allows us to pick out specific columns from our data. You can use names or their position in the data frame.</p>
 <p>First, let’s remind ourselves how we would accomplish this in base R.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Column selection in base R</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 1: climate_df$dt</span></span>
@@ -524,9 +558,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 239,167 more rows</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>The <code>select()</code> function does the same thing but with more power (and, in my opinion, more easily). The first argument in the function is the data frame. Any following arguments are the columns we want to select.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First argument is the data frame, then the columns</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(climate_df, dt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -604,11 +636,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 1 more variable: Longitude &lt;chr&gt;</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>You might have noticed that we haven’t put any column names in quotations, unlike what we did with selecting columns by name in base R. This is one quirk of the <code>tidyverse</code> to which you will need to pay special attention. We <em>usually</em> will not need to put column names in quotations.</p>
-<h4 id="lets-practice" class="anchored">Let’s practice!</h4>
+<section id="lets-practice" class="level3">
+<h3 class="anchored" data-anchor-id="lets-practice">Let’s practice!</h3>
 <p>Write a line of code to select the following data from the <code>climate_df</code>: average temperature, latitude and longitude</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select three select columns</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(climate_df, AverageTemperature, Latitude, Longitude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -629,11 +660,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 239,167 more rows</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>It is important to remember that the computer interprets everything literally. We need to tell the function the <strong>exact</strong> names of the columns. R will interpret <code>latitude</code> and <code>Latitude</code> as different things; it doesn’t know that they are probably the same!</p>
-<h3 id="filtering-rows" class="anchored"><code>filter()</code>ing rows</h3>
+</section>
+</section>
+<section id="filtering-rows" class="level2">
+<h2 class="anchored" data-anchor-id="filtering-rows"><code>filter()</code>ing rows</h2>
 <p><code>filter()</code> allows you filter rows by certain conditions. Recall that we did this a bit with base R.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base R</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Select rows where the average temperature was greater than 25</span></span>
@@ -657,9 +689,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 1 more variable: Longitude &lt;chr&gt;</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>The code above is, in my opinion, a bit unwieldy. Filter feels more intuitive. We still need the double equal signs, though!</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter same content as above, but with `tidyverse`</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(climate_df, AverageTemperature <span class="sc">&gt;</span> <span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -747,15 +777,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># To do that, we need to write to a new object</span></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>us_df <span class="ot">&lt;-</span> <span class="fu">filter</span>(climate_df, AverageTemperature <span class="sc">&gt;</span> <span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h3 id="lets-practice-using-select-and-filter" class="anchored">Let’s practice using <code>select()</code> and <code>filter()</code></h3>
+</section>
+<section id="lets-practice-using-select-and-filter" class="level2">
+<h2 class="anchored" data-anchor-id="lets-practice-using-select-and-filter">Let’s practice using <code>select()</code> and <code>filter()</code></h2>
 <p>Work with the climate data we’ve been using this class period. Construct a small set of code that does the following:</p>
 <ol type="1">
 <li>Slims down the full data frame to one that contains the columns dt, AverageTemperature and City. Assign this to an object called <code>slim</code>.</li>
 <li>Filters the data for Paris with an average temperature less than 22.</li>
 <li>Name this new data frame “cold_paris”</li>
 </ol>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Not piped</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -768,8 +798,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="co"># (3)</span></span>
 <span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>cold_paris <span class="ot">&lt;-</span> filtered</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h3 id="the-pipe" class="anchored">The pipe <code>%&gt;%</code></h3>
+</section>
+<section id="the-pipe" class="level2">
+<h2 class="anchored" data-anchor-id="the-pipe">The pipe <code>%&gt;%</code></h2>
 <p>You can use the pipe operator to chain tidyverse functions together. You can think of the pipe as automatically sending the output from the first line into the next line as the input.</p>
 <p>This is helpful for a lot of reasons, including:</p>
 <ol type="1">
@@ -777,7 +808,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>makes things more human-readable (in addition to computer-readable)</li>
 </ol>
 <p>The shortcut for typing a pipe is <code>Ctrl</code> + <code>Shift</code> + <code>M</code> (or <code>Cmd</code> + <code>Shift</code> + <code>M</code> on a Mac)</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open climate_df %&gt;% </span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Select City column</span></span>
@@ -808,14 +838,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># (4) Filter to Paris, then filter data where where avg. temp &lt; 22</span></span>
 <span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(City <span class="sc">==</span> <span class="st">"Paris"</span>, AverageTemperature <span class="sc">&lt;</span> <span class="dv">22</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h4 id="lets-practice-1" class="anchored">Let’s practice!</h4>
+<section id="lets-practice-1" class="level3">
+<h3 class="anchored" data-anchor-id="lets-practice-1">Let’s practice!</h3>
 <p>In small groups, use pipes to create a new data frame called <code>warm_nigeria</code> that includes the following:</p>
 <ul>
 <li>the columns AverageTemperature, City, Country</li>
 <li>only rows for the country Nigeria and temperatures that are greater than 30 degrees</li>
 </ul>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>warm_nigeria <span class="ot">&lt;-</span> climate_df <span class="sc">%&gt;%</span> </span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select columns</span></span>
@@ -823,12 +852,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filter</span></span>
 <span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Country <span class="sc">==</span> <span class="st">"Nigeria"</span>, AverageTemperature <span class="sc">&gt;</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<h3 id="creating-new-variables-with-mutate" class="anchored">Creating new variables with <code>mutate()</code></h3>
+</section>
+</section>
+<section id="creating-new-variables-with-mutate" class="level2">
+<h2 class="anchored" data-anchor-id="creating-new-variables-with-mutate">Creating new variables with <code>mutate()</code></h2>
 <p>Sometimes our data doesn’t have our data in exactly the format we want. For example, we might want our temperature data in Fahrenheit instead of Celsius.</p>
 <p>The <code>tidyverse</code> has a function called <code>mutate()</code> that lets us create a new column. Often, we want to apply a function to the entire column or perform some type of calculation, such as converting temp from F to C.</p>
 <p>To help us out, here is the equation for converting: <code>Fahrenheit = Celsius * (9/5) + 32</code></p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>climate_df <span class="sc">%&gt;%</span> </span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select temperature column</span></span>
@@ -852,13 +882,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 239,167 more rows</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>The first part of the argument in the mutate function (before the <code>=</code>) is the name of the new column we want to create (or, sometime, the name of a column we want to overwrite). After the <code>=</code> is what we want the new column to contain.</p>
-<h3 id="understanding-data-through-summarize" class="anchored">Understanding data through <code>summarize()</code></h3>
+</section>
+<section id="understanding-data-through-summarize" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-data-through-summarize">Understanding data through <code>summarize()</code></h2>
 <p>Like we have talked about in previous classes, some of the best ways for us to understand our data is through what we call summary statistics such as the mean, standard deviation, minimums, maximums, etc.</p>
 <p>Fortunately, the <code>tidyverse</code> has a handy-dandy function to make this easy to do with data frames.</p>
 <p>The <code>summarize()</code> function creates a new dataframe with columns and values we give it. Similar to <code>mutate()</code>, what is on the left of the <code>=</code> is the name of the new column, and what is on the right of the <code>=</code> is the value(s) to put in the new column.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>climate_df <span class="sc">%&gt;%</span> </span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make new data frame with one column containing: </span></span>
@@ -871,12 +901,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 1        NA      NA</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Wait a second! Those are some weird values!</p>
 <p><code>NA</code> is used to represent missing data. So what is happening here? We know that there are numbers to calculate these values.</p>
 <p>It is important to note that if any of the values in the column that you are trying to summarize are missing (<code>NA</code>), you might get some wonky values, like you did above.</p>
 <p>Fortunately, <code>mean()</code> and <code>sd()</code> and some other functions have an argument to remove the missing values: <code>na.rm = TRUE</code></p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Same as above, but with NA values omitted from calculation</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>climate_df <span class="sc">%&gt;%</span> </span>
@@ -889,9 +917,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 1      18.1    10.0</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Pay attention to where the <code>na.rm = TRUE</code> argument is placed. We are putting it inside the parentheses for the <code>mean()</code> and <code>sd()</code> function, not as an argument in the <code>summarize()</code> function.</p>
-<h3 id="split-apply-combine-with-group_by" class="anchored">Split, Apply, Combine with <code>group_by()</code></h3>
+</section>
+<section id="split-apply-combine-with-group_by" class="level2">
+<h2 class="anchored" data-anchor-id="split-apply-combine-with-group_by">Split, Apply, Combine with <code>group_by()</code></h2>
 <p>One common way we analyze data is through something we call the “split, apply, combine” approach. This means that we:</p>
 <ul>
 <li><em>split</em> data up into groups via some type of categorization</li>
@@ -900,7 +929,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>The <code>group_by()</code> function lets us do this. It is most often used in combination with <code>mutate()</code> or <code>summarize()</code>.</p>
 <p>For example, we can use this method to calculate the mean temperatures of <strong>each</strong> country instead of the overall mean of the entire dataset. In order to do these, we create groups in the data based on the country.</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Group data by country, then find mean and standard deviation for each</span></span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>climate_df <span class="sc">%&gt;%</span> </span>
@@ -924,10 +952,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 39 more rows</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
-<h4 id="lets-practice-2" class="anchored">Let’s practice!</h4>
+<section id="lets-practice-2" class="level3">
+<h3 class="anchored" data-anchor-id="lets-practice-2">Let’s practice!</h3>
 <p>Practice using the combination of <code>group_by()</code> and <code>summarize()</code> to calculate the minimum (<code>min()</code>) and maximum (<code>max()</code>) average temperatures for each city. Save this data frame as <code>city_min_max</code></p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Group data by city, then find minimum and maximum for each</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>climate_df <span class="sc">%&gt;%</span> </span>
@@ -951,9 +978,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 90 more rows</code></pre>
 </div>
 </div>
-<blockquote class="blockquote">
 <p>Already accomplished this task? Try to figure out how you can keep the “Country” column in the final data frame. This is trickier than you might think!</p>
-</blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Group data by country, then group by city, then find minimum and maximum for each</span></span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>climate_df <span class="sc">%&gt;%</span> </span>
@@ -980,6 +1005,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1219,7 +1245,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2024, University of Arizona | Last modified: 7 June 2024</div>   
+    <div class="nav-footer-left">Copyright 2024, University of Arizona | Last modified: 12 June 2024</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

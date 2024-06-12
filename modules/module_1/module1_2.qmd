@@ -106,7 +106,7 @@ mass_kg[2:4]      # Pull out 2nd, 3rd, and 4th elements from mass_kg
 
 ## Functions
 
-**Functions** are pre-written bits of codes that perform specific tasks for us. There are ones built into R (base R), but later in the course we will see that there are more specialized ones that we can equipt using another function called `library()`.
+**Functions** are pre-written bits of codes that perform specific tasks for us. There are ones built into R (base R), but later in the course we will see that there are more specialized ones that we can equip using another function called `library()`.
 
 Functions are always followed by parentheses. Anything you type into the parentheses are called **arguments**.
 
@@ -139,7 +139,7 @@ We can use a function called `class()` to figure out the data type of a vector.
 class(mass_kg)
 ```
 
-### Group Challenge
+### Challenge
 
 Let's practice! Write a few lines of code that do the following:
 
@@ -167,7 +167,7 @@ vec
 sum(vec)
 ```
 
-Already finished? See if you can condense your code down any further or turn around and help out a neighbor.
+Already finished? See if you can condense your code down any further.
 
 ```{r, message=FALSE, warning=FALSE}
 # Auto-generate sequence of numbers 6 to 1
@@ -234,7 +234,7 @@ Ideally, after typing `$`, R should give you a drop down list of all the column 
 
 This is a simple data set, but let's come up with some questions.
 
-Example: Height of plants treated with nitrogen vs. those not treated.
+*Example*: Height of plants treated with nitrogen vs. those not treated.
 
 ```{r, message=FALSE, warning=FALSE}
 # Filter rows based on values in the nitrogen column
@@ -247,11 +247,9 @@ mean(plants[plants$nitrogen == "Y", 1])
 
 ```
 
-### Group Challenge
+### Challenge: Using help files on functions
 
-Using help files on functions
-
-As a group, find the standard deviation (`sd()`) of the height of plants treated with nitrogen and those not treated with nitrogen. Which group has the larger standard deviation?
+Find the standard deviation (`sd()`) of the height of plants treated with nitrogen and those not treated with nitrogen. Which group has the larger standard deviation?
 
 ```{r, message=FALSE, warning=FALSE}
 # Standard deviation of plants treated with nitrogen
