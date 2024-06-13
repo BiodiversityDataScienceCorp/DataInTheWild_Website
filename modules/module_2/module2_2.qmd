@@ -107,7 +107,8 @@ This is where `mutate()` comes in! As we've seen in the past, `mutate()` applies
 
 ```{r, message=FALSE, warning=FALSE}
 # Let's first demonstrate applying our new function to a vector
-c_to_f(tank_data$avg_daily_temp)
+# Only show the first 10 rows as well
+head(c_to_f(tank_data$avg_daily_temp))
 
 # Mutate is basically doing the same thing
 tank_data <- tank_data %>%
